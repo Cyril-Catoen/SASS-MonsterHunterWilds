@@ -1,0 +1,51 @@
+/* Unset all kinds of preset styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+a, h2{
+    color: white;
+    font-family: "VTCGoblinHand";
+    font-size: 1.5rem;
+}
+
+button{
+    all: unset;
+    cursor: pointer; // Permet de conserver l'interaction utilisateur
+    display: inline-block; // Évite les comportements étranges selon le navigateur
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* add the fonts used by the website */
+@font-face {
+    font-family: "VTCGoblinHand";
+    src: url(../Font/VTCGoblinHand.ttf);    
+}
+
+
+.rotateplus45{
+    transform: rotate(45deg) translate(8px, 10px);
+    transition: all 1s ease;
+    }
+
+.disappear{
+    display: none;
+    transition: all 0.5s ease;
+    }
+
+.rotateminus45{
+    transform: rotate(-45deg) translate(3px, -8px);
+    transition: all 1s ease;
+    }
