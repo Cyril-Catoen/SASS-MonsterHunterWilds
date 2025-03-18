@@ -1,0 +1,43 @@
+@import '_vars.scss';
+
+main{
+    width: 100%;
+    min-height: 200vh;
+    background-color: black;
+    
+    h2{
+        margin-top: 5vh;
+    }
+
+    section{
+        height: 100vh;
+        background-image: url(../img/arkveld.png);
+        background-position: top center;
+        background-size: cover;
+        
+        
+        div{
+        @include container;
+
+            div:first-of-type{
+                display: flex;
+                justify-content: center;
+            }
+        
+            div:last-of-type{
+                margin: 5% 0% 5% auto; // margin-top, margin-right, margin-bottom, margin-left
+                @include w50;
+                background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0));
+                h3{
+                padding: 15% 5% 0% 5%; // padding-top, padding-right, padding-bottom, padding-left
+                margin-bottom: 2rem;
+                }
+                p{
+                padding: 0 15% 15% 5%; // padding-top, padding-right, padding-bottom, padding-left
+                }
+            }
+        }
+    }
+}
+
+
