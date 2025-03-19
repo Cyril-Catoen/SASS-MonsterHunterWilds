@@ -2,18 +2,35 @@
 
 main{
     width: 100%;
-    min-height: 200vh;
+    min-height: 300vh;
     background-color: black;
     
     h2{
         margin-top: 5vh;
+        position: relative;
+        z-index: 5;
+
+        &::before{
+            content:'La Chasse est ouverte';
+            font-family: "VTCGoblinHand";
+            font-size: 6rem;
+            color: grey;
+            position: absolute;
+            left: -25%; // Ajuste selon l'effet désiré
+            top: 50%; // Centre verticalement
+            transform: translateY(-50%); // Ajuste pour un vrai centrage
+            z-index: 3; // Place le texte derrière
+            opacity: 0.2; // Ajuste la transparence si nécessaire
+            white-space: nowrap; // Empêche le retour à la ligne
+        }
     }
 
     section{
-        height: 100vh;
+        height: 200vh;
         background-image: url(../img/arkveld.png);
-        background-position: top center;
+        background-position: calc(0% + 70% ) top; // Déplace l'image de 10% vers la gauche
         background-size: cover;
+        background-repeat: no-repeat;
         
         
         div{

@@ -373,17 +373,33 @@ html {
 /* define the dimensions of elements in % */
 main {
   width: 100%;
-  min-height: 200vh;
+  min-height: 300vh;
   background-color: black;
 }
 main h2 {
   margin-top: 5vh;
+  position: relative;
+  z-index: 5;
+}
+main h2::before {
+  content: "La Chasse est ouverte";
+  font-family: "VTCGoblinHand";
+  font-size: 6rem;
+  color: grey;
+  position: absolute;
+  left: -25%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  opacity: 0.2;
+  white-space: nowrap;
 }
 main section {
-  height: 100vh;
+  height: 200vh;
   background-image: url(../img/arkveld.png);
-  background-position: top center;
+  background-position: 70% top;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 main section div {
   width: 90%;
