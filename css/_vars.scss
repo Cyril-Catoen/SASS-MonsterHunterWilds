@@ -111,6 +111,10 @@ html {
     width:90%;
 }
 
+@mixin w75{
+    width:75%;
+}
+
 @mixin w60{
     width:60%;
 }

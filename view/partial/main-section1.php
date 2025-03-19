@@ -54,4 +54,25 @@
     <div id="hirabami"><video src="../video/Hirabami.mp4" autoplay muted></video></div>
     </section>
 
+            <!-- section 4 -->
+
+    <section>
+    <div id="biomes">
+        <div>
+            <h2>Biomes etendus et vivants</h2>
+        </div>
+        <div>
+            <h3>Il crache des eclairs, c'est chiant aussi</h3>
+            <p>Son corps est recouvert d'écailles dorées osseuses, avec des écailles noires plus petites sur le ventre, les articulations et les ailes. Contrairement à la plupart des autres wyvernes bipèdes, ses ailes ne sont pas composées de doigts allongés, mais d'une seule membrane semblable à celle des ptérosaures, avec des protubérances tranchantes utilisées comme armes.</p>
+        </div>
+    </div>
+    <button id="anime3">
+            <div>
+                <h4>Lancer l'animation</h4>
+            </div>
+    </button>
+    <div id="RayDauImg"><img src="../img/rayDau.png" alt="RayDau"></div>
+    <div id="RayDau"><video src="../video/RayDau.mp4" autoplay muted></video></div>
+    </section>
+
 </main>
