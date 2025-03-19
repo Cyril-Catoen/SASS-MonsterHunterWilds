@@ -1,11 +1,16 @@
 @import '_vars.scss';
 
 .animation1{
-    transform: translateX(0%) rotate(370deg) !important;
+    transform: translateX(0%) rotate(360deg) !important;
     transition: all 2s ease-in;
 }
 
 .animation2{
+    transform: translateX(0%) rotate(-370deg) !important;
+    transition: all 2s ease-in;
+}
+
+.animation3{
     transform: translateX(0%) rotate(-360deg) !important;
     transition: all 2s ease-in;
 }
@@ -283,4 +288,115 @@ section:nth-of-type(3){
 
 
 }
+
+section:nth-of-type(4){
+    position: relative;
+    width: 100%;
+    height: 125vh;
+    overflow: hidden;
+
+    h2{
+        margin-top: 6vh;
+        position: relative;
+        z-index: 5;
+
+        &::before{
+            content:'Biomes etendus et vivants';
+            font-family: "VTCGoblinHand";
+            font-size: 6rem;
+            color: grey;
+            position: absolute;
+            left: -25%; // Ajuste selon l'effet désiré
+            top: 50%; // Centre verticalement
+            transform: translateY(-50%); // Ajuste pour un vrai centrage
+            z-index: 3; // Place le texte derrière
+            opacity: 0.2; // Ajuste la transparence si nécessaire
+            white-space: nowrap; // Empêche le retour à la ligne
+        }
+    }
+
+    #biomes{
+        @include container;
+
+            div:first-of-type{
+                display: flex;
+                justify-content: center;
+            }
+        
+            div:last-of-type{
+                height: 50vh;
+                position: absolute;
+                left: 0;
+                bottom: 5vh; // Équivaut à margin-bottom: 5%
+                z-index:30;
+                
+                @include w75;
+                h3{
+                padding: 5% 5% 0% 5%; // padding-top, padding-right, padding-bottom, padding-left
+                margin-bottom: 2rem;
+                white-space: nowrap;
+                }
+                p{
+                padding: 0 5% 5% 5%; // padding-top, padding-right, padding-bottom, padding-left
+                }
+            }
+        }
+
+    #RayDauImg{
+        position: absolute;
+        top:15vh;
+        left:-50vh;
+        z-index:20;
+        transform: translateX(-90%);
+        transition: all 1s ease-out;
+
+            img{
+                width: 80%;
+            }
+    }
+    
+
+    #RayDau{
+        width: 100%;
+        position: absolute;
+        top: 23vh;
+        left: 0;
+        z-index: 2;
+
+        video {
+        width: 100%;
+        height: auto;
+        }
+    }
+
+    button{
+        background-image: url(../img/iconMenu.png) ;
+        background-size: cover;
+        height: 15vh;
+        width: 15vh;
+        z-index: 50;
+        position: absolute;
+        bottom: 6vh;
+        right: 10vh;
+        display: flex;
+        justify-content: center;
+    
+        div{
+            width: 50vh;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center; // Centrer horizontalement
+            transform: translateX(-30%);
+            
+            h4{
+                width: 50vh;
+            }
+        }
+    
+    }
+
+
+}
+
+
 }

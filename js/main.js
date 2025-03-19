@@ -29,12 +29,12 @@ btnAnimation1.addEventListener('click', () => {
 });
 
 // Ajoute l'animation au bouton du main section 3.
-const btnAnimation2 = document.querySelector('#anime2');
+const btnAnimation3 = document.querySelector('#anime3');
 
-btnAnimation2.addEventListener('click', () => {
+btnAnimation3.addEventListener('click', () => {
     // Sélectionner la nav uniquement dans header section
-    let animeHirabami= document.getElementById('hirabamiImg');
+    let animeRayDau= document.getElementById('RayDauImg');
     
     // Ajouter/retirer la classe translateNav
-    animeHirabami.classList.toggle('animation2'); // Appliquer/retirer animation1
+    animeRayDau.classList.toggle('animation3'); // Appliquer/retirer animation1
 });
