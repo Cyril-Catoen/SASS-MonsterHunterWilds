@@ -36,6 +36,11 @@ h3{
     font-size: 3rem;
 }
 
+h4{
+    @include VTCGoblinHand;
+    font-size: 2rem;
+}
+
 a{
     @include VTCGoblinHand;
     font-size: 1.5rem;
