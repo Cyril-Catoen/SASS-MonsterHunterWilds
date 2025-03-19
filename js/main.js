@@ -1,3 +1,4 @@
+// Ajoute l'animation au bouton du menu.
 const btnNav = document.querySelector('#Menu');
 
 btnNav.addEventListener('click', () => {
@@ -13,4 +14,16 @@ btnNav.addEventListener('click', () => {
     
     // Ajouter/retirer la classe translateNav
     menuNav.classList.toggle('translateNav'); // Appliquer/retirer translateNav
+});
+
+
+// Ajoute l'animation au bouton du main section 2.
+const btnAnimation1 = document.querySelector('#anime1');
+
+btnAnimation1.addEventListener('click', () => {
+    // Sélectionner la nav uniquement dans header section
+    let animeBalahara= document.getElementById('balaharaImg');
+    
+    // Ajouter/retirer la classe translateNav
+    animeBalahara.classList.toggle('animation1'); // Appliquer/retirer animation1
 });

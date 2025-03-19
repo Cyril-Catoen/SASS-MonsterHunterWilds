@@ -12,10 +12,40 @@ img {
   height: auto;
 }
 
-a, h2 {
+/* define the font*/
+h2 {
   color: white;
   font-family: "VTCGoblinHand";
+  font-size: 1rem;
+  color: sandybrown;
+  font-size: 4rem;
+}
+
+h3 {
+  color: white;
+  font-family: "VTCGoblinHand";
+  font-size: 1rem;
+  font-size: 3rem;
+}
+
+h4 {
+  color: white;
+  font-family: "VTCGoblinHand";
+  font-size: 1rem;
+  font-size: 2rem;
+}
+
+a {
+  color: white;
+  font-family: "VTCGoblinHand";
+  font-size: 1rem;
   font-size: 1.5rem;
+}
+
+p {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
 }
 
 button {
@@ -48,6 +78,8 @@ html {
   transition: all 1s ease;
 }
 
+/* define the containers */
+/* define the dimensions of elements in % */
 /* Unset all kinds of preset styles*/
 * {
   margin: 0;
@@ -62,10 +94,40 @@ img {
   height: auto;
 }
 
-a, h2 {
+/* define the font*/
+h2 {
   color: white;
   font-family: "VTCGoblinHand";
+  font-size: 1rem;
+  color: sandybrown;
+  font-size: 4rem;
+}
+
+h3 {
+  color: white;
+  font-family: "VTCGoblinHand";
+  font-size: 1rem;
+  font-size: 3rem;
+}
+
+h4 {
+  color: white;
+  font-family: "VTCGoblinHand";
+  font-size: 1rem;
+  font-size: 2rem;
+}
+
+a {
+  color: white;
+  font-family: "VTCGoblinHand";
+  font-size: 1rem;
   font-size: 1.5rem;
+}
+
+p {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
 }
 
 button {
@@ -98,9 +160,13 @@ html {
   transition: all 1s ease;
 }
 
+/* define the containers */
+/* define the dimensions of elements in % */
 header {
   width: 100%;
   height: 100vh;
+}
+header section {
   position: relative;
 }
 
@@ -155,7 +221,7 @@ header nav li div {
   margin-left: 25%;
   height: 100%;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   padding: 10px;
   position: relative;
 }
@@ -242,4 +308,232 @@ header video {
   top: 0;
   left: 0;
   z-index: 1;
+}
+
+/* Unset all kinds of preset styles*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* define the font*/
+h2 {
+  color: white;
+  font-family: "VTCGoblinHand";
+  font-size: 1rem;
+  color: sandybrown;
+  font-size: 4rem;
+}
+
+h3 {
+  color: white;
+  font-family: "VTCGoblinHand";
+  font-size: 1rem;
+  font-size: 3rem;
+}
+
+h4 {
+  color: white;
+  font-family: "VTCGoblinHand";
+  font-size: 1rem;
+  font-size: 2rem;
+}
+
+a {
+  color: white;
+  font-family: "VTCGoblinHand";
+  font-size: 1rem;
+  font-size: 1.5rem;
+}
+
+p {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  display: inline-block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* add the fonts used by the website */
+@font-face {
+  font-family: "VTCGoblinHand";
+  src: url(../Font/VTCGoblinHand.ttf);
+}
+.rotateplus45 {
+  transform: rotate(45deg) translate(8px, 10px);
+  transition: all 1s ease;
+}
+
+.disappear {
+  display: none;
+  transition: all 0.5s ease;
+}
+
+.rotateminus45 {
+  transform: rotate(-45deg) translate(3px, -8px);
+  transition: all 1s ease;
+}
+
+/* define the containers */
+/* define the dimensions of elements in % */
+.animation1 {
+  transform: translateX(0%) rotate(360deg) !important;
+  transition: all 2s ease-in;
+}
+
+main {
+  width: 100%;
+  background-color: black;
+}
+main section:first-of-type {
+  height: 200vh;
+  background-image: url(../img/arkveld.png);
+  background-position: 70% top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main section:first-of-type h2 {
+  margin-top: 5vh;
+  position: relative;
+  z-index: 5;
+}
+main section:first-of-type h2:first-of-type::before {
+  content: "La Chasse est ouverte";
+  font-family: "VTCGoblinHand";
+  font-size: 6rem;
+  color: grey;
+  position: absolute;
+  left: -25%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  opacity: 0.2;
+  white-space: nowrap;
+}
+main section:first-of-type div {
+  width: 90%;
+  margin: 10px auto;
+}
+main section:first-of-type div div:first-of-type {
+  display: flex;
+  justify-content: center;
+}
+main section:first-of-type div div:last-of-type {
+  margin: 5% 0% 5% auto;
+  width: 50%;
+  background: linear-gradient(to left, rgb(0, 0, 0), rgba(255, 255, 255, 0));
+}
+main section:first-of-type div div:last-of-type h3 {
+  padding: 15% 5% 0% 5%;
+  margin-bottom: 2rem;
+}
+main section:first-of-type div div:last-of-type p {
+  padding: 0 15% 15% 5%;
+}
+main section:nth-of-type(2) {
+  position: relative;
+  width: 100%;
+  height: 125vh;
+}
+main section:nth-of-type(2) h2 {
+  margin-top: 15vh;
+  position: relative;
+  z-index: 5;
+}
+main section:nth-of-type(2) h2::before {
+  content: "Nouvelles menaces";
+  font-family: "VTCGoblinHand";
+  font-size: 6rem;
+  color: grey;
+  position: absolute;
+  left: -25%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  opacity: 0.2;
+  white-space: nowrap;
+}
+main section:nth-of-type(2) #menaces {
+  width: 90%;
+  margin: 10px auto;
+}
+main section:nth-of-type(2) #menaces div:first-of-type {
+  display: flex;
+  justify-content: center;
+}
+main section:nth-of-type(2) #menaces div:last-of-type {
+  position: absolute;
+  right: 0;
+  top: 40vh;
+  bottom: 5vh;
+  z-index: 6;
+  width: 50%;
+  background: linear-gradient(to left, rgb(0, 0, 0), rgba(255, 255, 255, 0));
+}
+main section:nth-of-type(2) #menaces div:last-of-type h3 {
+  padding: 10% 5% 0% 5%;
+  margin-bottom: 2rem;
+}
+main section:nth-of-type(2) #menaces div:last-of-type p {
+  padding: 0 15% 20% 5%;
+}
+main section:nth-of-type(2) #balaharaImg {
+  position: absolute;
+  top: 15vh;
+  left: -40vh;
+  z-index: 30;
+  transform: translateX(-90%);
+  transition: all 1s ease-out;
+}
+main section:nth-of-type(2) #balaharaImg img {
+  width: 90%;
+}
+main section:nth-of-type(2) #balahara {
+  width: 100%;
+  position: absolute;
+  top: 37vh;
+  left: 0;
+  z-index: 2;
+}
+main section:nth-of-type(2) #balahara video {
+  width: 100%;
+  height: auto;
+}
+main section:nth-of-type(2) button {
+  background-image: url(../img/iconMenu.png);
+  background-size: cover;
+  height: 15vh;
+  width: 15vh;
+  z-index: 20;
+  position: absolute;
+  bottom: 6vh;
+  right: 10vh;
+  display: flex;
+  justify-content: center;
+}
+main section:nth-of-type(2) button div {
+  width: 50vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transform: translateX(-30%);
+}
+main section:nth-of-type(2) button div h4 {
+  width: 50vh;
 }/*# sourceMappingURL=style.css.map */

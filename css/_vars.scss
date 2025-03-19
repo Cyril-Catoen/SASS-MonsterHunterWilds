@@ -12,10 +12,42 @@ img{
     height: auto;
 }
 
-a, h2{
+/* define the font*/
+@mixin VTCGoblinHand{
     color: white;
     font-family: "VTCGoblinHand";
+    font-size: 1rem;
+}
+
+@mixin BasicText{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+h2{
+    @include VTCGoblinHand;
+    color: sandybrown;
+    font-size: 4rem;
+}
+
+h3{
+    @include VTCGoblinHand;
+    font-size: 3rem;
+}
+
+h4{
+    @include VTCGoblinHand;
+    font-size: 2rem;
+}
+
+a{
+    @include VTCGoblinHand;
     font-size: 1.5rem;
+}
+
+p{
+    @include BasicText;
 }
 
 button{
@@ -49,3 +81,65 @@ html {
     transform: rotate(-45deg) translate(3px, -8px);
     transition: all 1s ease;
     }
+
+/* define the containers */
+@mixin container{
+    @include w90;
+    margin: 10px auto;
+}
+
+
+/* define the dimensions of elements in % */
+@mixin img-size{
+    width:100%;
+    height: auto;
+}
+
+@mixin iframe-size{
+    margin-top: 1vh;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+@mixin w100{
+    width:100%;
+}
+
+@mixin w90{
+    width:90%;
+}
+
+@mixin w60{
+    width:60%;
+}
+
+@mixin w50{
+    width:50%;
+}
+
+@mixin w45{
+    width:45%;
+}
+
+@mixin w40{
+    width:40%;
+}
+
+
+@mixin w35{
+    width: 35%;
+}
+
+@mixin w30{
+    width: 30%;
+}
+
+@mixin w25{
+    width: 25%;
+}
+
+@mixin w15{
+    width: 15%;
+}
