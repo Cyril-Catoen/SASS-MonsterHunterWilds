@@ -32,4 +32,26 @@
     <div id="balaharaImg"><img src="../img/balahara.png" alt="Balahara"></div>
     <div id="balahara"><video src="../video/Balahara.mp4" autoplay muted></video></div>
     </section>
+
+        <!-- section 3 -->
+
+        <section>
+    <div id="end-game">
+        <div>
+            <h2>Contenu End-Game</h2>
+        </div>
+        <div>
+            <h3>Ca vole c'est chiant</h3>
+            <p>L'Hirabami est un Léviathan introduit dans Monster Hunter Wilds, caractérisé par une morphologie unique rappelant celle du Somnacanth. Son corps est principalement de couleur violet foncé avec des nuances de cyan. Sa tête pointue est couverte de plaques segmentées, et sa mâchoire inférieure peut se diviser en deux. L'intérieur de sa bouche est vivement coloré, et il possède deux petits yeux blancs dépourvus de pupilles. Une large membrane s'étend des côtés de sa tête le long de son corps, lui permettant de planer gracieusement dans les airs</p>
+        </div>
+    </div>
+    <button id="anime2">
+            <div>
+                <h4>Lancer l'animation</h4>
+            </div>
+    </button>
+    <div id="hirabamiImg"><img src="../img/hirabami.webp" alt="Hirabami"></div>
+    <div id="hirabami"><video src="../video/Hirabami.mp4" autoplay muted></video></div>
+    </section>
+
 </main>

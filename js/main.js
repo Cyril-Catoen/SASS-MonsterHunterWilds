@@ -27,3 +27,14 @@ btnAnimation1.addEventListener('click', () => {
     // Ajouter/retirer la classe translateNav
     animeBalahara.classList.toggle('animation1'); // Appliquer/retirer animation1
 });
+
+// Ajoute l'animation au bouton du main section 3.
+const btnAnimation2 = document.querySelector('#anime2');
+
+btnAnimation2.addEventListener('click', () => {
+    // Sélectionner la nav uniquement dans header section
+    let animeHirabami= document.getElementById('hirabamiImg');
+    
+    // Ajouter/retirer la classe translateNav
+    animeHirabami.classList.toggle('animation2'); // Appliquer/retirer animation1
+});
